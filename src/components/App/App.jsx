@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import GalleryList from '../GalleryList/GalleryList'
 
 
 function App() {
@@ -31,11 +32,9 @@ function App() {
         </header>
         <p>Gallery goes here</p>
         {/* <img src="images/goat_small.jpg"/> */}
-        <ul>
-        {galleryList.map( galleryItem => 
-         (<li key={galleryItem.id}><img src={galleryItem.path}/></li>)
-        )}
-      </ul>
+       <GalleryList 
+       galleryList={galleryList}
+       />
       </div>
     );
 }
