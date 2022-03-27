@@ -9,6 +9,20 @@ function App() {
 
   const [galleryList, setGalleryList] = useState([]);
 
+  const addLove = (galleryItem) => {
+    console.log('addLove func')
+
+    axios.put(`/gallery/${galleryItem.id}`)
+    .then( response => {
+        console.log('loving:', galleryItem.description);
+        console.log(response);
+        getGalleryList();
+    })
+    .catch( error => {
+        console.log(error)
+    })
+}
+
   const getGalleryList = () => {
 
     axios.get('/gallery')
@@ -34,6 +48,7 @@ function App() {
         {/* <img src="images/goat_small.jpg"/> */}
        <GalleryList 
        galleryList={galleryList}
+       addLove={addLove}
        />
       </div>
     );
