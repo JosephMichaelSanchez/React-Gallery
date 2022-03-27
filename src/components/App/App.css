@@ -32,7 +32,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   gap: 10px;
-  justify-content: center;
+  justify-content: left;
   vertical-align: middle;
  
 }

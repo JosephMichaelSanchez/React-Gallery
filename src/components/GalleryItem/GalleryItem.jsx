@@ -22,13 +22,13 @@ function GalleryItem ({galleryItem, addLike}) {
         setIsShowing(!isShowing);
     };
 
-    // conditional to determine what is displayed on the DOM in the span underneath each picture
+    // function with a conditional to determine what is displayed on the DOM in the span underneath each picture
     const checkLikes = () => {
         
         // if 0 likes, 'Nobody likes this' and a frown face appears
         if (galleryItem.likes === 0) {
             return (
-                <p>Nobody likes this : ^ /</p>
+                <p>Nobody likes this :^/</p>
             );
         // if 1 like, 'One person likes this' appears    
         }else if (galleryItem.likes === 1) {
