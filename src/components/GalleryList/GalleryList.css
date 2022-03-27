@@ -1,6 +1,6 @@
 .flexContainer {
     display: flex;
-    height: 200px;
+    height: 360px;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 10px;
