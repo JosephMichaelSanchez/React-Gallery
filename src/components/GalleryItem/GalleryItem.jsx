@@ -36,7 +36,7 @@ function GalleryItem ({galleryItem, addLike}) {
 return (
 
     <>
-        <div className="flexItem" key={galleryItem.id}>
+        <div className="FlexItem" key={galleryItem.id}>
           <span className="picButton" onClick={handleShowHide}>{isShowing ? <img src={galleryItem.path} /> : <p className="taco">{galleryItem.description}</p>}</span>
           <p><button onClick={handleLike}>Like It!</button></p>
           <span>{checkLikes()}</span>  
