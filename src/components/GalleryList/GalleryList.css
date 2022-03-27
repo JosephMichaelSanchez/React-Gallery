@@ -1,7 +1,10 @@
 .flexContainer {
     display: flex;
-    background-color: yellow;
     height: 200px;
-    
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+
     
 }
