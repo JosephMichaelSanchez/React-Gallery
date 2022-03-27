@@ -3,7 +3,7 @@ import './GalleryItem.css';
 
 function GalleryItem ({galleryItem, addLike}) {
 
-    const handleLove = () => {
+    const handleLike = () => {
         console.log('clicked Like It');
         addLike(galleryItem);
     }
@@ -29,7 +29,7 @@ return (
     <>
         <div className="flexItem" key={galleryItem.id}>
           <p><img src={galleryItem.path} /></p>
-          <p><button onClick={handleLove}>Like It!</button></p>
+          <p><button onClick={handleLike}>Like It!</button></p>
           <span>{checkLikes()}</span>  
         </div>
     </>
