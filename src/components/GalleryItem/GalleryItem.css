@@ -1,5 +1,13 @@
 .flexItem {
     height: 350px;
     width: 350px;
+    border: black;
     
 }
+
+.picButton {
+    height: 100px;
+    width: 100px;
+    border: 5px black;
+}
+

@@ -12,9 +12,9 @@ function App() {
   const addLike = (galleryItem) => {
     console.log('addLike func')
 
-    axios.put(`/like/${galleryItem.id}`)
+    axios.put(`/gallery/like/${galleryItem.id}`)
     .then( response => {
-        console.log('likng:', galleryItem.description);
+        console.log('liking:', galleryItem.description);
         console.log(response);
         getGalleryList();
     })
