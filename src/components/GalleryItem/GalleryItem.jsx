@@ -50,8 +50,10 @@ return (
         <div className="FlexItem" key={galleryItem.id}>
                                                                             {/* Ternary operator for isShowing True and False, will toggle between image and description */}
           <span className="picButton" onClick={handleShowHide}>{isShowing ? <img src={galleryItem.path} /> : <p>{galleryItem.description}</p>}</span>
+          {/* empty p-tag for spacing */}
+          <p></p>
           {/* button click will call handleLike */}
-          <p><button onClick={handleLike}>Like It!</button></p>
+          <p><button className="btn btn-primary" onClick={handleLike}>Like It!</button></p>
           {/* what is displayed in the span will be determined by the conditional in the checkLikes function */}
           <span>{checkLikes()}</span>  
         </div>
