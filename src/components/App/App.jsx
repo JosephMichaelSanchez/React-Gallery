@@ -9,12 +9,12 @@ function App() {
 
   const [galleryList, setGalleryList] = useState([]);
 
-  const addLove = (galleryItem) => {
-    console.log('addLove func')
+  const addLike = (galleryItem) => {
+    console.log('addLike func')
 
-    axios.put(`/gallery/${galleryItem.id}`)
+    axios.put(`/like/${galleryItem.id}`)
     .then( response => {
-        console.log('loving:', galleryItem.description);
+        console.log('likng:', galleryItem.description);
         console.log(response);
         getGalleryList();
     })
@@ -48,7 +48,7 @@ function App() {
         {/* <img src="images/goat_small.jpg"/> */}
        <GalleryList 
        galleryList={galleryList}
-       addLove={addLove}
+       addLike={addLike}
        />
       </div>
     );
