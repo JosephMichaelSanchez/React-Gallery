@@ -17,17 +17,18 @@
   height: 350px;
   width: 350px;
   border: black 2px;
-  background-color: rgb(52, 69, 69);
+  background-color: rgb(2, 26, 26);
   justify-content: center;
   display: flex;
   flex-direction: column;
   font-family: Verdana, sans-serif;
+  color: white;
+  border-radius: 25px;
   
 }
 
 .flexContainer {
   display: flex;
-  height: 360px;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 10px;
